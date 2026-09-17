@@ -1,0 +1,17 @@
+/* IMPORTS */
+include "./configs/001-inputs.kdl"
+include "./configs/002-outputs.kdl"
+include "./configs/003-layout.kdl"
+include "./configs/004-anims.kdl"
+include "./configs/005-binds.kdl"
+include "./configs/006-startups.kdl"
+include "./configs/007-window_rules.kdl"
+include "./configs/008-layer_rules.kdl"
+include "./configs/009-workspaces.kdl"
+include "./configs/010-misc.kdl"
+
+include "./noctalia-stuff.kdl"
+include "noctalia.kdl"
+
+include "./configs/011-overrides.kdl"
+

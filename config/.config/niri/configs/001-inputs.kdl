@@ -1,0 +1,28 @@
+/* https://niri-wm.github.io/niri/Configuration%3A-Input.html */
+input {
+    keyboard {
+        xkb {
+            options "caps:escape"
+        }
+    }
+
+    touchpad {
+        // off
+        tap
+        natural-scroll
+        scroll-factor 1.0
+    }
+
+    mouse {
+        // off
+    }
+
+    trackpoint {
+        // off
+    }
+
+    warp-mouse-to-focus
+    focus-follows-mouse max-scroll-amount="20%" 
+    workspace-auto-back-and-forth
+}
+

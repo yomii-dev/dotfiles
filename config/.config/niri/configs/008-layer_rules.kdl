@@ -1,0 +1,6 @@
+/* https://niri-wm.github.io/niri/Configuration%3A-Layer-Rules.html */
+layer-rule {
+  match namespace="^quickshell$"
+  place-within-backdrop true
+}
+

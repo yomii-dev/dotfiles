@@ -1,0 +1,161 @@
+/* https://niri-wm.github.io/niri/Configuration%3A-Window-Rules.html */
+
+/* ----------- GENERAL ----------- */
+
+window-rule {
+  match is-active=false
+  opacity 0.8
+}
+
+window-rule {
+  opacity 0.93
+  background-effect {
+    blur true
+  }
+  popups {
+    geometry-corner-radius 8
+    opacity 0.95
+
+    background-effect {
+      blur true
+    }
+  }
+}
+
+/* Maximized to edges */
+window-rule {
+  match app-id="^zen$"
+  match app-id="^helium$"
+  match app-id="md.Obsidian"
+  match app-id="^dev.zed.Zed$"
+
+  open-maximized-to-edges true
+}
+
+/* Open Maximized */
+window-rule {
+  match app-id="com.github.th_ch.youtube_music"
+  match app-id="vesktop"
+  match app-id="equibop"
+  match app-id="^obsidian$"
+  match app-id="^Player$"
+  match app-id="^ferdium$"
+
+  open-maximized true
+}
+
+/* ----------- WORKSPACE RELATED ----------- */
+
+/* "MAIN" WORKSPACE */
+window-rule {
+  match app-id="^zen$"
+  match app-id="^helium$"
+  match app-id="^dev.zed.Zed$"
+
+  open-on-workspace "main"
+}
+
+/* "SCRATCHPAD" */
+window-rule {
+  match app-id="com.github.th_ch.youtube_music"
+  match app-id=".easyeffects$"
+  match title="^Google Keep" app-id="^chrome-"
+
+  open-on-workspace "scratchpad"
+}
+
+/* SOCIALS */
+window-rule {
+  match app-id="^vesktop$"
+  match app-id="^steam$"
+  match app-id="equibop"
+
+  open-on-workspace "socials"
+}
+
+window-rule {
+  match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+  default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
+/* ----------- APP SPECIFIC ----------- */
+//
+//
+//
+//
+
+/* ----------- MISC ----------- */
+
+/* FLOATS */
+window-rule {
+  match app-id="^PacketTracer$"
+  match app-id="io.missioncenter.MissionCenter"
+  match app-id="qalculate-gtk"
+  match app-id="org.pulseaudio.pavucontrol"
+
+  open-floating true
+}
+
+window-rule {
+  match app-id="^float$"
+  open-floating true
+  default-floating-position x=0 y=10 relative-to="top"
+  default-column-width { proportion 0.6; }
+  default-window-height { proportion 0.8; }
+}
+
+window-rule {
+  match title="[Pp]icture[ -]in[ -][Pp]icture"
+
+  default-column-width { fixed 480; }
+  default-window-height { fixed 270; }
+
+  opacity 0.8
+  open-floating true
+  default-floating-position x=5 y=31 relative-to="top-right"
+}
+
+/* DROPDOWN */
+window-rule {
+  match app-id="dropdown"
+  match app-id="imv" title="sched.png"
+
+  open-floating true
+  default-floating-position x=0 y=20 relative-to="top"
+  default-column-width { proportion 0.7; }
+  default-window-height { proportion 0.8; }
+}
+
+/* WINDOW BORDERS */
+window-rule {
+  match is-window-cast-target=true
+
+  focus-ring {
+    active-color "#f38ba8"
+    inactive-color "#7d0d2d"
+  }
+
+  border {
+    inactive-color "#7d0d2d"
+  }
+
+  shadow {
+    color "#7d0d2d70"
+  }
+
+  tab-indicator {
+    active-color "#f38ba8"
+    inactive-color "#7d0d2d"
+  }
+}
+
+// Example: block out two password managers from screen capture.
+// (This example rule is commented out with a "/-" in front.)
+window-rule {
+  match title="^Messenger" app-id="^chrome-"
+
+  block-out-from "screen-capture"
+
+  // Use this instead if you want them visible on third-party screenshot tools.
+  // block-out-from "screencast"
+}

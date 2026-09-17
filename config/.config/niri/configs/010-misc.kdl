@@ -1,0 +1,32 @@
+/* https://niri-wm.github.io/niri/Configuration%3A-Miscellaneous.html */
+/* ----------- MISCELLANEOUS ----------- */
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+/-cursor {
+  xcursor-size 24
+  hide-when-typing
+}
+
+environment {
+  ELECTRON_OZONE_PLATFORM_HINT "auto"
+  QT_QPA_PLATFORM "wayland"
+  QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+  XDG_SESSION_TYPE "wayland"
+  XDG_CURRENT_DESKTOP "niri"
+  QT_QPA_PLATFORMTHEME "qt6ct"
+}
+
+overview {
+    workspace-shadow {
+      off
+    }
+}
+
+clipboard {
+    disable-primary
+}

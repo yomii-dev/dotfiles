@@ -1,0 +1,15 @@
+include "./dms/alttab.kdl"
+include "./dms/binds.kdl"
+include "./dms/colors.kdl"
+include "./dms/layout.kdl"
+include "./dms/switchEvents.kdl"
+// include "./dms/wpblur.kdl"
+
+include "dms/outputs.kdl"
+include "dms/cursor.kdl"
+spawn-sh-at-startup "dms run"
+
+window-rule {
+    match app-id=r#"org.quickshell$"#
+    open-floating true
+}

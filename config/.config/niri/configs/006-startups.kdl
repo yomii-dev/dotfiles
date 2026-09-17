@@ -1,0 +1,11 @@
+/* https://niri-wm.github.io/niri/Configuration%3A-Miscellaneous.html#spawn-at-startup */
+/* ----------- STARTUPS ----------- */
+/* CLIPBOARD */
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
+spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
+
+/* APP STARTUPS */
+spawn-at-startup "kdeconnectd"
+spawn-sh-at-startup "blueman-applet"
+spawn-sh-at-startup "sleep 1 && easyeffects"
+spawn-sh-at-startup "xdg-open https://"
