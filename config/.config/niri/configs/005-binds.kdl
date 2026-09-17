@@ -8,7 +8,7 @@ binds {
 
   /* TERMINAL */
   Mod+Shift+Return repeat=false {
-    spawn-sh "python3 ~/src/niri_tweaks/niri_spawnjump.py 'alacritty --class float' float -t scratch";
+    spawn-sh "niri_spawnjump.py 'alacritty --class float' float -t scratch";
   }
   Mod+Return { spawn "alacritty"; }
 
@@ -18,7 +18,7 @@ binds {
   Mod+E { spawn "nautilus"; }
 
   /* :PEAK: */
-  Mod+P { spawn-sh "python3 ~/src/niri_tweaks/niri_peekaboo.py"; }
+  Mod+P { spawn-sh "niri_peekaboo.py"; }
 
   /* ----------- NIRI ----------- */
 
