@@ -7,7 +7,8 @@ hotkey-overlay {
     skip-at-startup
 }
 
-/-cursor {
+cursor {
+  xcursor-theme "catppuccin-dark"
   xcursor-size 24
   hide-when-typing
 }
