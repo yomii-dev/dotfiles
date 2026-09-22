@@ -33,8 +33,7 @@ abbr -a t "tuxedo todo.txt"
 abbr -a ytmp4 "yt-dlp -f \"bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]\" --paths ~/Videos/"
 
 # Run fastfetch ONLY on alacritty
-if test "$TERM" = alacritty
-    sleep 0.1
+if test "$TERM" = alacritty; or test "$TERM" = xterm-ghostty
     fastfetch
 end
 

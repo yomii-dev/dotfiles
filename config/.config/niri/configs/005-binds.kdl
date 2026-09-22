@@ -8,11 +8,11 @@ binds {
 
   /* TERMINAL */
   Mod+Shift+Return repeat=false {
-    spawn-sh "niri_spawnjump.py 'alacritty --class float' float -t scratch";
+    spawn-sh "niri_spawnjump.py 'xdg-terminal-exec --app-id=please.float' please.float -t scratch";
   }
-  Mod+Return { spawn "alacritty"; }
+  Mod+Return { spawn "xdg-terminal-exec"; }
 
-  Mod+Y { spawn-sh "alacritty -e yazi"; }
+  Mod+Y { spawn-sh "xdg-terminal-exec -e yazi"; }
 
   /* APPS */
   Mod+E { spawn "nautilus"; }
