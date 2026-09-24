@@ -24,9 +24,6 @@ window-rule {
 
 /* Maximized to edges */
 window-rule {
-  match app-id="^zen$"
-  match app-id="^helium$"
-  match app-id="md.Obsidian"
   match app-id="^dev.zed.Zed$"
 
   open-maximized-to-edges true
@@ -34,6 +31,8 @@ window-rule {
 
 /* Open Maximized */
 window-rule {
+  match app-id="^helium$"
+  match app-id="md.Obsidian"
   match app-id="com.github.th_ch.youtube_music"
   match app-id="vesktop"
   match app-id="equibop"
