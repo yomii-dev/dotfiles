@@ -1,3 +1,7 @@
+# le dotfiles
+*border radius is pointless*
+i know, im hilarious(i stole the joke)
+
 ### Dependencies
 ```sh
 pacman -S --needed niri ghostty fastfetch fish noctalia xdg-terminal-exec \
