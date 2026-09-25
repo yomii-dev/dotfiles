@@ -1,5 +1,5 @@
 # le dotfiles
-*border radius is pointless*
+*border radius is pointless*  
 i know, im hilarious(i stole the joke)
 
 ### Dependencies
