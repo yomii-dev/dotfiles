@@ -32,6 +32,7 @@ window-rule {
 /* Open Maximized */
 window-rule {
   match app-id="^helium$"
+  match app-id="^librewolf$"
   match app-id="md.Obsidian"
   match app-id="com.github.th_ch.youtube_music"
   match app-id="vesktop"
@@ -112,17 +113,6 @@ window-rule {
   opacity 0.8
   open-floating true
   default-floating-position x=5 y=31 relative-to="top-right"
-}
-
-/* DROPDOWN */
-window-rule {
-  match app-id="dropdown"
-  match app-id="imv" title="sched.png"
-
-  open-floating true
-  default-floating-position x=0 y=20 relative-to="top"
-  default-column-width { proportion 0.7; }
-  default-window-height { proportion 0.8; }
 }
 
 /* WINDOW BORDERS */
