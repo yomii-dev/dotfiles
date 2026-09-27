@@ -50,6 +50,7 @@ window-rule {
 window-rule {
   match app-id="^zen$"
   match app-id="^helium$"
+  match app-id="^librewolf$"
   match app-id="^dev.zed.Zed$"
 
   open-on-workspace "main"
