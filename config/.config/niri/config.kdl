@@ -13,5 +13,5 @@ include "./configs/010-misc.kdl"
 include "./noctalia-stuff.kdl"
 include "noctalia.kdl"
 
-include "./configs/011-overrides.kdl"
+include optional=true "./configs/011-overrides.kdl"
 
