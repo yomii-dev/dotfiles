@@ -1,11 +1,6 @@
 /* https://niri-wm.github.io/niri/Configuration%3A-Key-Bindings.html */
 binds {
   /* ----------- PERSONAL ----------- */
-  /* CUSTOM */
-  Mod+Shift+S { spawn-sh "imv ~/Pictures/Skul/sched.png -w floating"; }
-  Mod+Alt+F { maximize-window-to-edges; }
-  Ctrl+Shift+Alt+M { spawn-sh "equibop --toggle-mic"; }
-
   /* TERMINAL */
   Mod+Shift+Return repeat=false {
     spawn-sh "niri_spawnjump.py 'xdg-terminal-exec --app-id=please.float' please.float -t scratch";
