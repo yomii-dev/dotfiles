@@ -1,5 +1,5 @@
 # Set default editor
-set -gx EDITOR nvim
+set -gx EDITOR vis
 
 # Source
 source ~/.config/fish/nnn.fish
