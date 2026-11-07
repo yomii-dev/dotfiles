@@ -1,5 +1,6 @@
 # Set default editor
-set -gx EDITOR vis
+# set -gx EDITOR vis
+set -gx EDITOR helix
 
 # Source
 source ~/.config/fish/nnn.fish
@@ -34,6 +35,7 @@ abbr -a ls "eza --color=always --long --git --no-filesize --icons=always --no-ti
 abbr -a uu "sudo pacman -Syu && yay -Syu && flatpak update"
 abbr -a t "tuxedo todo.txt"
 abbr -a ytmp4 "yt-dlp -f \"bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]\" --paths ~/Videos/"
+abbr -a hx helix
 
 # Run fastfetch ONLY on alacritty
 if test "$TERM" = alacritty; or test "$TERM" = xterm-ghostty
